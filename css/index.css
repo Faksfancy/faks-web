@@ -47,6 +47,7 @@ p {
         font-size: 2.4rem;
     }
 }
+
 /*links*/
 a {
     text-decoration: none;
@@ -68,5 +69,34 @@ a {
 @media screen and (min-width: 1024px) {
     .link-arrow {
         font-size: 1.5rem;
+    }
+}
+
+/*badges*/
+
+.badges {
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+.badges--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+.badges--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+.badges--small {
+    font-size: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+    .badges {
+        font-size: 1.5rem;
+    }
+    .badges--small {
+        font-size: 1.2rem;
     }
 }
