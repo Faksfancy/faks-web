@@ -9,6 +9,9 @@
 html {
     font-size: 62.5%;
 }
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 body {
     font-family: inter, Arial, Helvetica, sans-serif;
     color: var(--color-body);
@@ -142,4 +145,52 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+/*button*/
+.btn {
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+}
+.btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+.btn--primary:hover {
+    background: #3a8ffd;
+}
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+.btn--secondary:hover {
+    background: #00c8eb;
+}
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+.btn--accent:hover {
+    background: #ec3000;
+}
+.btn--outline {
+    color: var(--color-headings);
+    background: #fff;
+    border: 2px solid var(--color-headings);
+}
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+}
+.btn--block {
+    width: 100%;
+    display:inline-block;
 }
