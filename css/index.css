@@ -169,10 +169,19 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 2px;
+    outline: 0;
     border: 0;
     text-align: center;
     text-transform: uppercase;
     padding: 2rem 3rem;
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+
 }
 .btn--primary {
     background: var(--color-primary);
@@ -234,10 +243,12 @@ a {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     display: flex;
+    margin: 0 auto;
 }
 .input-group .input {
     border: 0;
     flex-grow: 1;
+    padding: 1.5rem 2rem;
 }
 .input-group .btn {
     margin: 4px;
@@ -608,4 +619,30 @@ a {
     .hero {
         padding-top: 0;
     }
+}
+
+/*DORMAIN BLOCK*/
+.block-dormain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 722px;
+}
+
+.block-dormain__price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 722px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .block-dormain__price {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    
 }
