@@ -173,7 +173,7 @@ a {
     border: 0;
     text-align: center;
     text-transform: uppercase;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
 }
 
 .btn .icon {
@@ -249,6 +249,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 .input-group .btn {
     margin: 4px;
@@ -658,13 +659,14 @@ a {
 
 .block-dormain__price {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
     font-size: 2rem;
     font-weight: 600;
     max-width: 722px;
     margin: 0 auto;
+    color: var(--color-headings);
 }
 
 @media screen and (min-width: 768px) {
